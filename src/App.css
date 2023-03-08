@@ -1,0 +1,391 @@
+.Banner {
+  height: 40em;
+  background: var(--light-gold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Banner .logo {
+  height: 20em;
+}
+
+.Banner .buttons {
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.Banner .buttons button {
+  width: 120px;
+  height: 33px;
+  margin-left: 1em;
+  margin-right: 1em;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Banner .buttons .left {
+  background: var(--gold);
+  border: 1px solid black;
+}
+
+.Banner .buttons .left:hover {
+  background: var(--light-gold);
+}
+
+.Banner .buttons .right {
+  background: black;
+  color: var(--gold);
+}
+
+.Banner .buttons .right:hover {
+  background: rgb(48, 48, 48);
+}
+
+.Banner .buttons button:focus {
+  outline: none;
+}
+
+.banner-wrapper .bottom {
+  width: 100%;
+  height: 3em;
+  background: black;
+  display: flex;
+  align-items: center;
+  padding-left: 2em;
+}
+
+.banner-wrapper .interact-logo {
+  height: 2em;
+}
+
+@media (max-width: 300px) {
+  .Banner .logo {
+    display: flex;
+    justify-content: center;
+    height: 12em;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.Details {
+  margin-top: 3em;
+}
+
+.Details .top p {
+  width: 50%;
+  /* text-align: justify;
+  word-spacing: -2px;
+  word-break: break-all; */
+  font-size: 25px;
+  line-height: 1.3;
+}
+
+.Details .top {
+  display: flex;
+  justify-content: space-between;
+  height: 25em;
+}
+
+.Details .top .right {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.Details .bottom {
+  margin-top: 5em;
+  padding: 1em;
+}
+
+.Details .bottom p {
+  /* text-align: justify; */
+  /* word-break: break-all; */
+  text-align: center;
+  word-spacing: -2px;
+  font-size: 25px;
+  line-height: 1.4;
+  padding: 3em;
+  padding-left: 7em;
+  padding-right: 7em;
+}
+
+.Details .bottom .line-horizontal {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  width: 70%;
+  margin: 0 auto;
+  border: 2px solid var(--gold);
+}
+
+@media (max-width: 810px) {
+  .Details .bottom p {
+    padding: 3em;
+  }
+}
+
+@media (max-width: 745px) {
+  .Details .top p {
+    width: 100%;
+  }
+
+  .Details .top {
+    height: auto;
+    padding-bottom: 5em;
+    display: block;
+  }
+
+  .Details .top p {
+    text-align: center;
+    margin-top: 3em;
+  }
+
+  .Details .top .right {
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .Details .bottom p {
+    padding: 0;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  .Details .bottom .line-horizontal {
+    width: 100%;
+  }
+}
+
+.Contact .details {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.Contact .form-container {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.Contact .contact-form {
+  margin-top: 3em;
+  display: block;
+  width: 100%;
+}
+
+.text-input {
+  display: block;
+  margin-top: 5em;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.7em;
+}
+.text-input:focus {
+  outline: none;
+}
+
+.text-input:focus {
+  border-color: var(--gold);
+}
+
+.Contact .contact-form .long {
+  width: 100%;
+}
+
+.Contact .contact-form .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Contact .contact-form .submit-button {
+  margin-top: 6em;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid black;
+  width: 80px;
+  padding-bottom: 0.7em;
+  color: var(--gold);
+  cursor: pointer;
+}
+
+.Contact .contact-form .submit-button:focus {
+  outline: none;
+}
+
+.Contact .contact-form .submit-button:hover {
+  width: 90px;
+  color: black;
+  border-color: var(--gold);
+}
+
+label {
+  margin-left: 1em;
+}
+
+@media (max-width: 995px) {
+  .text-input {
+    width: 250px;
+  }
+}
+
+@media (max-width: 860px) {
+  .Contact .details,
+  .Contact .form-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 730px) {
+  .text-input {
+    width: 180px;
+  }
+}
+
+@media (max-width: 650px) {
+  .Contact .details,
+  .Contact .form-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 539px) {
+  .Contact .details,
+  .Contact .form-container {
+    width: 95%;
+  }
+
+  .text-input {
+    width: 150px;
+  }
+}
+
+@media (max-width: 376px) {
+  .text-input {
+    width: 130px;
+  }
+}
+
+@media (max-width: 320px) {
+  .text-input {
+    width: 105px;
+  }
+}
+
+.Boxes {
+  margin-top: 3em;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.Boxes .left,
+.Boxes .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0.5em;
+  margin-top: 3em;
+  width: 200px;
+  height: 200px;
+  border: 2px solid var(--gold);
+}
+
+.Boxes h2 {
+  text-align: center;
+  color: var(--gold);
+  margin-top: 2em;
+  margin-block-start: 3em;
+  /* margin-block-end: 0.83em; */
+}
+
+.h2-wrapper {
+  width: 200px;
+}
+
+@media (max-width: 715px) {
+  .Boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    margin-top: 2em;
+  }
+}
+
+.Footer {
+  background: var(--gold);
+  margin-top: 5em;
+  padding: 2em;
+  padding-bottom: 0;
+  color: white;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Footer .container {
+  margin: 0 auto;
+  width: 60%;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Footer .cc {
+  margin: 0 auto;
+  border-top: 1px solid white;
+  width: 60%;
+  font-size: 15px;
+  text-align: center;
+  padding: 1em 0px 1em 0px;
+}
+
+.Footer span {
+  text-align: right;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.Footer span:hover {
+  color: rgb(221, 220, 220);
+}
+
+@media (max-width: 540px) {
+  .Footer .container {
+    width: 80%;
+  }
+  .Footer .cc {
+    width: 100%;
+  }
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,14 @@
+.Constrainter {
+  display: flex;
+  justify-content: center;
+}
+
+.inner-constrainter {
+  width: 70%;
+}
+
+@media (max-width: 1190px) {
+  .inner-constrainter {
+    width: 90%;
+  }
+}
